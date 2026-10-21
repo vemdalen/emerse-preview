@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="ad.size" content="width=250,height=360">
+<title>JOBI – Konkursutförsäljning 30% – 250x360</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:250px;height:360px;overflow:hidden;background:#fff}
+#banner{position:relative;width:250px;height:360px;overflow:hidden;cursor:pointer;
+ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+ background:#3C7B84;background:linear-gradient(135deg,#4D8A92 0%,#2F646B 100%)}
+#banner>*,.pwrap>*{position:absolute}
+.panel{background:#fff;opacity:0;animation:panel .6s cubic-bezier(.2,.8,.2,1) .05s forwards}
+.shoe{opacity:0;animation:shoe .7s cubic-bezier(.2,.8,.2,1) .25s forwards,float 2.6s ease-in-out 1.2s 4}
+.logo{opacity:0;animation:fade .5s ease .1s forwards}
+.h1{color:#fff;font-weight:900;letter-spacing:-.01em;text-transform:uppercase;white-space:nowrap;opacity:0;
+ animation:up .55s cubic-bezier(.2,.8,.2,1) .45s forwards}
+.badge{border-radius:50%;background:#FFC845;color:#1E3B40;font-weight:900;display:flex;align-items:center;justify-content:center;
+ letter-spacing:-.04em;transform:scale(0) rotate(-10deg);opacity:0;box-shadow:0 6px 18px rgba(0,0,0,.22);
+ animation:pop .6s cubic-bezier(.3,1.6,.4,1) 1.05s forwards,wiggle 1.4s ease-in-out 2.4s 2}
+.badge i{font-style:normal;font-size:.62em;margin-left:.04em}
+.sub{color:#fff;font-weight:500;white-space:nowrap;opacity:0;animation:up .5s cubic-bezier(.2,.8,.2,1) 1.45s forwards}
+.cta{background:#fff;color:#2F646B;font-weight:700;border-radius:999px;white-space:nowrap;opacity:0;line-height:1;
+ box-shadow:0 4px 12px rgba(0,0,0,.18);animation:up .5s cubic-bezier(.2,.8,.2,1) 1.9s forwards,pulse 1.6s ease-in-out 3.2s 3}
+.cta.dark{background:#2F646B;color:#fff}
+.cta b{font-weight:700;margin-left:.3em}
+.frame{left:0;top:0;width:100%;height:100%;border:1px solid rgba(0,0,0,.18);pointer-events:none}
+@keyframes fade{to{opacity:1}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes panel{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shoe{from{opacity:0;transform:translate(0px,50px) rotate(0deg)}to{opacity:1;transform:translate(0,0) rotate(0deg)}}
+@keyframes float{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(0,-6px) rotate(0deg)}}
+@keyframes pop{from{opacity:0;transform:scale(0) rotate(-10deg)}to{opacity:1;transform:scale(1) rotate(-10deg)}}
+@keyframes wiggle{0%,100%{transform:scale(1) rotate(-10deg)}30%{transform:scale(1.08) rotate(-4deg)}60%{transform:scale(1.04) rotate(-13deg)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}</style>
+<script src="https://adsby.bidtheatre.com/js/asxhtml5.min.js"></script>
+</head>
+<body>
+<div id="banner">
+<div class="panel" style="left:0;top:242px;width:250px;height:118px"></div>
+<div class="pwrap" style="left:0;top:242px;width:250px;height:118px;overflow:hidden"><img class="shoe" src="shoe.jpg" alt="" style="left:70px;top:2px;width:150px"></div>
+<img class="logo" src="logo-white.png" alt="JOBI" style="left:18px;top:16px;width:76px">
+<div class="h1" style="left:18px;top:50px;font-size:23px;line-height:1.0">KONKURS-<br>UTFÖRSÄLJNING</div>
+<div class="badge" style="left:146px;top:150px;width:86px;height:86px;font-size:32px">-30<i>%</i></div>
+<div class="sub" style="left:18px;top:106px;font-size:12px;line-height:1.15">på alla arbetsskor,<br>sandaler &amp; skyddsskor</div>
+<div class="cta" style="left:18px;top:172px;font-size:13px;padding:8px 16px">Handla nu<b>›</b></div>
+<div class="frame"></div>
+</div>
+<script>
+(function(){
+  var fallback = "https://www.jobi.se/?utm_source=emerse.com&utm_medium=display&utm_campaign=konkursutforsaljning_30";
+  var clickurl = (window.asxhtml5 && asxhtml5.getParam) ? asxhtml5.getParam('clickurl', fallback) : fallback;
+  document.getElementById('banner').onclick = function(){ window.open(clickurl, '_blank'); };
+})();
+</script>
+</body>
+</html>
